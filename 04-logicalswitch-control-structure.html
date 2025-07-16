@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>04 Logical Switch Control Structure</title>
+</head>
+<body>
+
+    <script>
+        const choice = 3;
+        let message = "";
+
+        switch(true) {
+            case (choice < 1):
+                message = "Make coffee 💜";
+                break;
+            case (choice > 2):
+                message = "Make tea 💚";
+                break;
+            default:
+                message = "You need water 💧";
+                break;
+        }
+        console.log(`Message: ${message}`);
+        
+    </script>
+
+</body>
+</html>
