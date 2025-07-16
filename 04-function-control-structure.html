@@ -6,19 +6,18 @@
 <body>
 
 <script>
-    const hour = 10;
-
-    if (hour > 12) {
-        console.log("It's past noon!");
-    } else {
-        console.log("It's not noon yet!");
-    }
-    if (hour >=12 && hour <= 13) {
-        console.log("It's lunchtime!");
-    } 
-
-    const what = hour < 12 ? "coffee" : "lunch";
-    console.log(`Let's have ${what}!`);
+    const doSomething = (x, y) => {
+        const didSomething = {
+            x: x*4,
+            y: y*2
+        };
+        return didSomething;
+    };
+    let count = 5;
+    let apples = 2;
+    let result = doSomething(count, apples);
+    console.log(result);
+    
 </script>
 
 </body>
