@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>05 Variable Methods</title>
+</head>
+<body>
+
+    <script>
+        const name = "Hogwarts Legacy";
+        const length = name.length;
+        const lowerCaseName = name.toLowerCase();
+        const upperCaseName = name.toUpperCase();
+        const replaceName = name.replace("Hogwarts Legacy", "Hogsmeade"); 
+        const replacedName = name.replace('o', 'a'); // vervangt de eerste 'o' door 'a'
+        const replaceAllName = name.replaceAll(/o/g, 'a');// g staat voor global, dus alle 'o's worden vervangen
+        const substringName = name.substring(2, 8); // geeft de substring van index 2 tot 5 (exclusief 5)
+        const toArrayName = name.split(' '); // zonder spatie is blijkbaar elke character dus met spatie is woord per woord
+
+        console.log({
+            length: length,
+            lowerCaseName: lowerCaseName,
+            upperCaseName: upperCaseName,
+            replaceName: replaceName,
+            replaceAllName: replaceAllName,
+            substringName: substringName,
+            toArrayName: toArrayName
+        })
+    </script>
+
+</body>
+</html>
