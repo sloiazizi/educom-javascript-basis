@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objective</title>
+</head>
+<body>
+
+    <script>
+        const shoppingCart = [
+            { item: "Apple", price: 0.5, quantity: 4 },
+            { item: "Banana", price: 0.3, quantity: 6 },
+            { item: "Orange", price: 0.8, quantity: 3 }
+        ];
+
+        let total = 0;
+        shoppingCart.forEach(product => {
+            total += product.price * product.quantity;
+        });
+
+        console.log("Total cost of shopping cart: $" + total.toFixed(2));
+    </script>
+
+</body>
+</html>
