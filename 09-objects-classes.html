@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objective</title>
+</head>
+<body>
+
+    <script>
+        // okay this will be lil bit hard but i want to see if i can do it
+        // i will make it Hogwarts theme so class Wizard
+        class Wizard {
+        // Property
+        house = ""
+
+        // so the constructor will pick a house for the wizard... right?
+        constructor(house) {
+            this.house = house;
+        }
+
+        // Method: gives result (returns) the house of the wizard
+        getHouse() {
+            return (this.house);
+        }
+    }
+
+    // Create two wizard characters with different houses
+    const Luna = new Wizard("Ravenclaw");
+    const Draco = new Wizard("Slytherin");
+
+    // Log the houses of each wizard
+    console.log({
+        Luna: Luna.getHouse(),
+        Draco: Draco.getHouse()
+    });
+    </script>
+
+</body>
+</html>
