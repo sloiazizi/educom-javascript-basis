@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 Looping Through Arrays</title>
+</head>
+<body>
+
+    <script>
+        let txt = ""; // dit is dus een variable die we gaan gebruiken om de tekst in op te slaan
+        const coffee = ["Espresso", "FlatWhite", "Cappuccino"];
+        coffee.forEach((value, index, array) => { 
+            txt += `${value.toUpperCase()}-`;
+        });
+        console.log(txt);
+    </script>
+
+</body>
+</html>

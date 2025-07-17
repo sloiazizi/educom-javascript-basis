@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 Filter Arrays</title>
+</head>
+<body>
+
+    <script>
+      const filterFunction = (value, index, array) => {
+          return value > 20; // Filteren op lengte van de string
+      };
+      const numbers = [10, 20, 30, 40, 50];
+
+      const over20 = numbers.filter(filterFunction);
+      console.log(over20);
+
+    </script>
+
+</body>
+</html>

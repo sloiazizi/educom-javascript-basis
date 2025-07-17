@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 IndexOf Find Arrays</title>
+</head>
+<body>
+
+    <script>
+        
+        const numbers = [10, 20, 30, 40, 50];
+        const coffee = ["Espresso", "FlatWhite", "Macchiato", "Cappuccino"];
+
+        // We gaan nu een functie schrijven om de getallen in de array te vinden die groter zijn dan 20
+        const isOver20 = (item) => {
+            return item > 20; // Filteren op getallen groter dan 20
+        };
+
+        // en nu gaan we kijken welk nummer en ook bijbehorende index groter is dan 20
+        const firstNumOver20 = numbers.find(isOver20);
+        const indexfirstNumOver20 = numbers.indexOf(firstNumOver20);
+
+        // en nu index vinden van FlatWhite en Macchiato in de coffee array
+        const flatWhiteIndex = coffee.indexOf("FlatWhite");
+        const macchiatoIndex = coffee.indexOf("Macchiato");
+
+        // resultaten loggen
+        console.log({ 
+            firstNumOver20,
+            indexfirstNumOver20,
+            flatWhiteIndex,
+            macchiatoIndex
+        });
+
+       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 Map Arrays</title>
+</head>
+<body>
+
+    <script>
+        let txt = "";
+        const coffee = ["Espresso", "FlatWhite", "Cappuccino"];
+        const n = coffee.map( item=>{ // map maakt een nieuwe array aan. 
+            return item.toUpperCase();
+        });
+
+        console.log(n); // ["ESPRESSO", "FLATWHITE", "CAPPUCCINO"]
+    </script>
+
+</body>
+</html>

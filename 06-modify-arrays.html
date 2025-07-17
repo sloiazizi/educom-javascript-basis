@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 Modify Arrays</title>
+</head>
+<body>
+
+    <script>
+        const coffee = ["Espresso", "which coffee?", "Cappuccino"];
+        console.log({before: [...coffee]}); // Kopie van de array loggen want anders pakt console last known inhoud. hierom kreeg ik 2x array met flatwhite
+
+        coffee[1] = "Flat White";
+        console.log({after: [...coffee]});
+    </script>
+
+</body>
+</html>

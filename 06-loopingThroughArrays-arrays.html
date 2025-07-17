@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 Looping Through Arrays</title>
+</head>
+<body>
+
+    <script>
+        let txt = ""; // dit is dus een variable die we gaan gebruiken om de tekst in op te slaan
+        const coffee = ["Espresso", "FlatWhite", "Cappuccino"];
+        // inloopcoffee = hierin callback functie. 
+        // callback functie is een functie die je doorgeeft aan een andere functie ;)
+
+        const inLoopCoffee = (value, index, array) => { 
+            txt += value.toUpperCase(); // value is de waarde van het element in de array
+        };
+        coffee.forEach(inLoopCoffee); // hier wordt de callback functie doorgegeven aan forEach
+        console.log(txt);
+
+    </script>
+
+</body>
+</html>
