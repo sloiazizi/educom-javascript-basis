@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise1 Arrays</title>
+</head>
+<body>
+
+    <script>
+       //oke wat we moeten doen is dus als eerst array maken en dan totaal prijs.
+       // hierna tax erbij en thats it... dus ja pakken we en forEach loop 
+       // en dan gaan we de prijs optellen en daarna de tax erbij optellen? 
+       const prices = [5,2,1,3,2,5,8,12,10];
+       let totalPrice = 0;
+
+       prices.forEach(price => {
+           totalPrice += price;
+       });
+
+       const taxPercentage = 0.21;
+       const totalWithTax = totalPrice + (totalPrice * taxPercentage);
+       
+       console.log("Total excl tax:", totalPrice);
+       console.log("Total incl tax:", totalWithTax.toFixed(2)); // toFixed(2) zorgt voor 2 decimalen
+
+    </script>
+
+</body>
+</html>
