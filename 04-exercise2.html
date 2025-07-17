@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>04 Exercise 2</title>
+</head>
+<body>
+
+    <script>
+       //opdracht psd schema geeft aan:
+       // je start met i=0 en set sumEven = 0. hierna habben we een loop van 0 tot 100.
+       // als het even is dan sumEven = sumEven+i etc. eigenlijk is het principe zelfde alleen
+       // lijkt het nu meer dat ipc if i%2===0 heb je nu isEven functie (als ik het goed heb begrepen)
+       const isEven = (num) => {
+           return num % 2 === 0;
+       };
+         let sumEven = 0;
+         for (let i = 0; i <= 100; i++) {
+             if (isEven(i)) {
+                    sumEven += i;
+                    console.log(`Even number: ${i}`); // ook hier laat ik else shizzle achterwegen want ik heb alleen de even getallen nodig
+             }
+         }
+         console.log(`Sum of even numbers: ${sumEven}`);
+    </script>
+
+</body>
+</html>

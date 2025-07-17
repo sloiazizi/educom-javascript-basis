@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>04 Exercise 1</title>
+</head>
+<body>
+
+    <script>
+        // oke dus maak een loop van 0tm100. controleer of het getal even of oneven is. hierna even getallen optellen.
+        
+        // oke dus eerst bijhouden van getallen die even zijn 
+        let sumEven = 0;
+
+        // Loop from 0 to 100
+        for (let i = 0; i <= 100; i++) {
+
+            // Check of het getal even of oneven is met % en daarna bij toevoegen aan de som
+            if (i % 2 === 0) {
+                sumEven += i;
+                console.log(`Even number: ${i}`); // ik laat else shizzle achterwegen want ik heb alleen de even getallen nodig
+            }
+        }
+        console.log(`Sum of even numbers: ${sumEven}`);
+
+    </script>
+
+</body>
+</html>
